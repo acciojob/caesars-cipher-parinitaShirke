@@ -1,5 +1,7 @@
 // Your Script here.
 
+
+
 const lookup = {
   A: "N",
   B: "O",
@@ -36,7 +38,11 @@ function rot13(encodedStr) {
   // Only change code below this line
 
 	for(int i=0;i<encodedStr.length;i++){
-		decodedArr[i]=encodedStr[i].replace(lookup.decodedArr[i])
+		if(lookup[encodedStr[i]]==undefined){
+			decodedArr.push[encodedStr[i]];
+		}
+		else
+			decodedArr.push[encodedStr[i]];
 	}
   return; //return decodedArr
 }
